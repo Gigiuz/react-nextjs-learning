@@ -8,14 +8,14 @@ export default function ContatoreProdotti() {
   const [count, setCount] = useState<number>(0);
   const [isMounted, setIsMounted] = useState(false);
 
-  // ✅ Legge il valore dal localStorage dopo il montaggio
+  //Legge il valore dal localStorage dopo il montaggio
   useEffect(() => {
     setIsMounted(true); // Indica che il componente è montato
     const savedCount = Number(localStorage.getItem("count")) || 0;
     setCount(savedCount);
   }, []);
 
-  // ✅ Salva il valore nel localStorage ogni volta che cambia `count`
+  //Salva il valore nel localStorage ogni volta che cambia `count`
   useEffect(() => {
     if (isMounted) {
       localStorage.setItem("count", count.toString());

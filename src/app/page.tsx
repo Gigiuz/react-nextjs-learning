@@ -1,3 +1,4 @@
+import GestoreUtenti from "@/components/GestoreUtenti";
 import ContatoreProdotti from "../components/ContatoreProdotti";
 import ListaSpesa from "../components/ListaSpesa ";
 
@@ -16,6 +17,7 @@ export default function Home() {
           Termine esercizio 2
         </span>
       </div>
+      <GestoreUtenti />
     </>
   );
 }

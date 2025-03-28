@@ -56,7 +56,7 @@ export default function ListaSpesa() {
 
       {/* LISTA DELLA SPESA */}
       {items.length === 0 ? (
-        <p className="mt-4 text-gray-500">Lista vuota</p>
+        <p className="mt-4">Lista vuota</p>
       ) : (
         <Table className="mt-4">
           <TableCaption>Elementi nella lista ({items.length})</TableCaption>
